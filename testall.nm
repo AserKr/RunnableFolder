@@ -1,0 +1,146 @@
+fibo(n)
+{
+	var i,f1,f2,tmp;
+	f1 = 1;
+	f2 = 1;
+	i = 0;
+	while( i<n )
+	{
+		tmp = f1+f2;
+		f1 = f2;
+		f2 = tmp;
+		i = i+1;
+	};
+	f1;
+}
+
+f(n)
+{
+	if( n<2 )
+	{
+		1;
+	}
+	else
+	{
+		f(n-1)+ f(n-2);
+	};
+}
+
+g()
+{
+	25;
+}
+
+func(x,y,z){
+        var b;
+        b = x*y-z;
+        b;
+    }
+
+testwhile(n){
+	var i;
+	i=n;
+	while( n>0 )
+	{
+		i=i+1;
+		n=n-1;
+	};
+	i;
+	}
+
+
+	
+testif1()
+{
+	var i;
+	i=25;
+	
+	if( 3>2 )
+	{
+		i=1;
+	};
+	i;	
+}
+
+
+testif2()
+{
+	var i;
+	i=25;
+	
+	if( 3<2 )
+	{
+		i=9999;
+	}
+	else{i=2;};
+	i;	
+}
+
+
+testif3()
+{
+	var i;
+	i=3;
+	
+	if( 3<2 )
+	{
+		i=2;
+	}
+	elseif(3<2){
+	i=3;
+	};
+	i;	
+}
+
+
+testif4()
+{
+	var i;
+	i=25;
+	
+	if( 3<2 )
+	{
+		i=2;
+	}
+	elseif(3<2){
+	i=3;
+	}
+	else{i=4;};
+	i;	
+}
+
+testif5()
+{
+	var i;
+	i=25;
+	
+	if( 3<2 )
+	{
+		i=2;
+	}
+	elseif(3<2){
+	i=3;
+	}
+	elseif(77<2){
+	i=3;
+	}
+	else{i=5;};
+	i;	
+}
+
+	
+
+main()
+{
+	writeln(1:2:3:null);
+	writeln("fibo(35)="++fibo(35));
+	writeln("fibo(35)="++f(35));
+	writeln(g());
+        writeln("func(8,2,1)="++func(8*2,6-3,4));  ;;;func returns 15
+	writeln(testwhile(10));
+	writeln(testif1());
+	writeln(testif2());
+	writeln(testif3());
+	writeln(testif4());
+	writeln(testif5());
+}
